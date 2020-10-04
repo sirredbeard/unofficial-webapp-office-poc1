@@ -20,7 +20,7 @@ parts:
       - libgtk-3-0
       - libgtk-3-dev
     override-build: |
-      wget https://nim-lang.org/choosenim/init.sh
+      curl https://nim-lang.org/choosenim/init.sh --output init.sh
       sh init.sh -y
       export PATH=/root/.nimble/bin:$PATH
       choosenim stable --yes --verbose
@@ -45,16 +45,21 @@ apps:
       - x11
   outlook:
     command: Outlook
+    extensions: *extensions
     plugs: *plugs
   excel:
     command: Excel
+    extensions: *extensions
     plugs: *plugs
   powerpoint:
     command: PowerPoint
+    extensions: *extensions
     plugs: *plugs
   onenote:
     command: OneNote
+    extensions: *extensions
     plugs: *plugs
   onedrive:
     command: OneDrive
+    extensions: *extensions
     plugs: *plugs

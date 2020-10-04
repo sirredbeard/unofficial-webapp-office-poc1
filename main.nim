@@ -1,4 +1,4 @@
 import webgui
-let app = newWebView("URL", title = "TITLE")
+let app = newWebView("URL", title = "TITLE", cssPath = "light.css")
 app.run()
 app.exit()
