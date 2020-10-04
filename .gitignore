@@ -2,3 +2,4 @@ nimcache/
 nimblecache/
 htmldocs/
 *.snap
+snapcraft.cfg

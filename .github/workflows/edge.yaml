@@ -20,13 +20,11 @@ jobs:
         echo ${REMOTE_BUILD_CREDENTIALS} | base64 --decode --ignore-garbage > $HOME/.local/share/snapcraft/provider/launchpad/credentials
         git config --global user.email "you@example.com"
         git config --global user.name "Your Name"
-        cd nightly
         snapcraft remote-build --launchpad-accept-public-upload --build-on=arm64,armhf,amd64,i386,ppc64el
     - name: Upload snap to Snap Store
       env:
         SNAPCRAFT_LOGIN_FILE: ${{ secrets.SNAPCRAFT_LOGIN_FILE }}
       run: |
-        cd nightly
         mkdir .snapcraft
         echo ${SNAPCRAFT_LOGIN_FILE} | base64 --decode --ignore-garbage > .snapcraft/snapcraft.cfg
         ARCHS="arm64 armhf amd64 i386 ppc64el"
