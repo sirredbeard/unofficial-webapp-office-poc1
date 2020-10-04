@@ -4,3 +4,6 @@ htmldocs/
 *.snap
 snapcraft.cfg
 *.txt
+bin/
+build
+init.sh
