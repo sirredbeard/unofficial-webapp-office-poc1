@@ -20,7 +20,8 @@ parts:
       - libgtk-3-0
       - libgtk-3-dev
     override-build: |
-      curl https://nim-lang.org/choosenim/init.sh -sSf | sh
+      wget https://nim-lang.org/choosenim/init.sh
+      sh init.sh -y
       export PATH=/root/.nimble/bin:$PATH
       choosenim stable --yes --verbose
       nimble refresh
