@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=2.0
+Name=Outlook
+GenericName=Outlook
+Comment=Outlook
+Type=Application
+Icon=${SNAP}/snap/meta/outlook.png
+Exec=unofficial-webapp-office.outlook
+Terminal=false
+Keywords=Outlook,mail,email,calendar,contacts
+Categories=Office;Email;Calendar;ContactManagement;Qt

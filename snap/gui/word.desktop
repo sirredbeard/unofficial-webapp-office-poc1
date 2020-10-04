@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=2.0
+Name=Word
+GenericName=Word
+Comment=Word
+Type=Application
+Icon=${SNAP}/meta/gui/word.png
+Exec=unofficial-webapp-office.word
+Terminal=false
+Keywords=Word,document,doc
+Categories=Office;WordProcessor;Qt

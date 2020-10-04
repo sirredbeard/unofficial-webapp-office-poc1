@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=2.0
+Name=PowerPoint
+GenericName=PowerPoint
+Comment=PowerPoint
+Type=Application
+Icon=${SNAP}/snap/meta/powerpoint.png
+Exec=unofficial-webapp-office.powerpoint
+Terminal=false
+Keywords=PowerPoint,presentation,ppt
+Categories=Office;Presentation;Qt

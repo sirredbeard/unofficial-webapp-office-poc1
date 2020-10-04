@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=2.0
+Name=Excel
+GenericName=Excel
+Comment=Excel
+Type=Application
+Icon=${SNAP}/snap/meta/excel.png
+Exec=unofficial-webapp-office.excel
+Terminal=false
+Keywords=Excel,spreadsheet
+Categories=Office;Spreadsheet

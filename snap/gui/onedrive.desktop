@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=2.0
+Name=OneDrive
+GenericName=OneDrive
+Comment=OneDrive
+Type=Application
+Icon=${SNAP}/snap/meta/onedrive.png
+Exec=unofficial-webapp-office.onedrive
+Terminal=false
+Keywords=OneDrive,files,cloud,photos
+Categories=Office;FileTransfer;Qt

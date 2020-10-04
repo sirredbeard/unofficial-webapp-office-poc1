@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=2.0
+Name=OneNote
+GenericName=OneNote
+Comment=OneNote
+Type=Application
+Icon=${SNAP}/snap/meta/onenote.png
+Exec=unofficial-webapp-office.onenote
+Terminal=false
+Keywords=OneNote,note,notes,notepad
+Categories=Office;ProjectManagement;Qt

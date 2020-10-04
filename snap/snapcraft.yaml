@@ -1,0 +1,59 @@
+name: unofficial-webapp-office
+version: '2.0'
+summary: Unofficial Webapp Office
+description: Unofficial wrapper for Office 365 web apps.
+
+confinement: strict
+base: core18
+
+parts:
+  unofficial-webapp-office:
+    source: .
+    plugin: dump
+    build-packages:
+      - build-essential
+      - pkg-config
+      - git
+      - curl
+      - libwebkit2gtk-4.0-37
+      - libwebkit2gtk-4.0-dev
+      - libgtk-3-0
+      - libgtk-3-dev
+    override-build: |
+      curl https://nim-lang.org/choosenim/init.sh -sSf | sh
+      export PATH=/root/.nimble/bin:$PATH
+      choosenim stable --yes --verbose
+      nimble refresh
+      nimble install csvtools webgui --accept
+      nim compile -r build.nim
+      cp bin/* "$SNAPCRAFT_PART_INSTALL"
+      rm "$SNAPCRAFT_PART_INSTALL"/*.nim
+
+apps:
+  word:
+    command: Word
+    extensions: [gnome-3-34]
+    plugs: &plugs
+      - browser-support
+      - desktop
+      - desktop-legacy
+      - home
+      - network
+      - opengl
+      - screen-inhibit-control
+      - x11
+  outlook:
+    command: Outlook
+    plugs: *plugs
+  excel:
+    command: Excel
+    plugs: *plugs
+  powerpoint:
+    command: PowerPoint
+    plugs: *plugs
+  onenote:
+    command: OneNote
+    plugs: *plugs
+  onedrive:
+    command: OneDrive
+    plugs: *plugs
