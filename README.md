@@ -6,7 +6,7 @@ Unofficial-webapp-office2 uses a GTK3, [WebKitGTK](https://webkitgtk.org/), and 
 
 This replaces the previous Qt5, Qt5 WebEngine, C++, and QML stack.
 
-Reduces snap package size from 115M to 
+Reduces snap package size from 115M to <1 M.
 
 Supports Wayland.
 
@@ -19,5 +19,9 @@ The app name and icon is handled by .desktop files in /snap/gui/ and snapd.
 main.nim relies on [webgui](https://github.com/juancarlospaco/webgui).
 
 The snap package relies on the [gnome-3-34 extension](https://snapcraft.io/blog/gnome-3-34-snapcraft-extension).
+
+To do:
+
+* Custom css theme
 
 Built with [Ubuntu on WSL](https://ubuntu.com/wsl).

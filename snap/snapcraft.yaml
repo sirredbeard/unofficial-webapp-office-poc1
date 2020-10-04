@@ -33,7 +33,7 @@ parts:
 apps:
   word:
     command: Word
-    extensions: [gnome-3-34]
+    extensions: 
     plugs: &plugs
       - browser-support
       - desktop
@@ -45,21 +45,21 @@ apps:
       - x11
   outlook:
     command: Outlook
-    extensions: *extensions
+    extensions: [gnome-3-34]
     plugs: *plugs
   excel:
     command: Excel
-    extensions: *extensions
+    extensions: [gnome-3-34]
     plugs: *plugs
   powerpoint:
     command: PowerPoint
-    extensions: *extensions
+    extensions: [gnome-3-34]
     plugs: *plugs
   onenote:
     command: OneNote
-    extensions: *extensions
+    extensions: [gnome-3-34]
     plugs: *plugs
   onedrive:
     command: OneDrive
-    extensions: *extensions
+    extensions: [gnome-3-34]
     plugs: *plugs
