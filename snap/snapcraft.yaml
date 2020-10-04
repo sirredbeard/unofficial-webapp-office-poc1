@@ -33,7 +33,7 @@ parts:
 apps:
   word:
     command: Word
-    extensions: 
+    extensions: [gnome-3-34]
     plugs: &plugs
       - browser-support
       - desktop
